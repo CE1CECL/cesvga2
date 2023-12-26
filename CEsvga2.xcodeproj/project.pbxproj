@@ -690,7 +690,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
-				COPYRIGHT_NOTICE = "Copyright 2009-2013 CE1CECL";
+				COPYRIGHT_NOTICE = "Copyright (C) 2023-2024, Christopher Eric Lentocha";
 				CURRENT_PROJECT_VERSION = 0;
 				DYLIB_COMPATIBILITY_VERSION = 0;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
