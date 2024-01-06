@@ -348,7 +348,7 @@ void CLASS::processOptions()
 	uint32_t boot_arg;
 
 //	ce1_options_ac = CE1_OPTION_AC_GL_CONTEXT | CE1_OPTION_AC_2D_CONTEXT | CE1_OPTION_AC_SURFACE_CONNECT;
-	ce1_options_fb = CE1_OPTION_FB_FIFO_INIT | CE1_OPTION_FB_REFRESH_TIMER | CE1_OPTION_FB_ACCEL | CE1_OPTION_FB_CURSOR_BYPASS_2 | CE1_OPTION_FB_REG_DUMP;
+	ce1_options_ac = CE1_OPTION_AC_SURFACE_CONNECT | CE1_OPTION_AC_2D_CONTEXT | CE1_OPTION_AC_GL_CONTEXT | CE1_OPTION_AC_DVD_CONTEXT | CE1_OPTION_AC_SVGA3D | CE1_OPTION_AC_DIRECT_BLIT | CE1_OPTION_AC_QE | CE1_OPTION_AC_PACKED_BACKING | CE1_OPTION_AC_REGION_BOUNDS_COPY;
 	if (PE_parse_boot_argn("ce1_options_ac", &boot_arg, sizeof boot_arg))
 		ce1_options_ac = boot_arg;
 	if (PE_parse_boot_argn("-svga3d", &boot_arg, sizeof boot_arg))
