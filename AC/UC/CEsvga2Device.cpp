@@ -100,7 +100,7 @@ IOExternalMethod* CLASS::getTargetAndMethodForIndex(IOService** targetP, UInt32 
 		DVLog(2, "%s(target_out, %u)\n", __FUNCTION__, static_cast<unsigned>(index));
 	if (!targetP || index >= kIOCEDeviceNumMethods)
 		return 0;
-#if 0
+#if 1
 	if (index >= kIOCEDeviceNumMethods) {
 		if (m_provider)
 			*targetP = m_provider;
@@ -130,7 +130,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 	DVLog(2, "%s(%u, options_out, memory_out)\n", __FUNCTION__, static_cast<unsigned>(type));
 	if (!options || !memory)
 		return kIOReturnBadArgument;
-#if 0
+#if 1
 	// GLD never calls this
 	IOBufferMemoryDescriptor* md = IOBufferMemoryDescriptor::inTaskWithOptions(0,
 																			   kIOMemoryPageable |
@@ -146,7 +146,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 #endif
 }
 
-#if 0
+#if 1
 /*
  * Note: NVDevice has an override on this method
  *   In OS 10.6 redirects methods 14 - 19 to local code implemented in externalMethod()
@@ -226,7 +226,7 @@ IOReturn CLASS::get_config(uint32_t* c1, uint32_t* c2, uint32_t* c3, uint32_t* c
 	 */
 	*c1 = version_major >= 11 ? 0x40000U : 0U;
 #ifdef USE_OWN_GLD
-#if 0
+#if 1
 	*c2 = static_cast<uint32_t>(m_provider->getLogLevelGLD()) & 7U;
 #else
 	*c2 = 1U;	// set GLD logging to error level
@@ -259,7 +259,7 @@ IOReturn CLASS::get_surface_info(uintptr_t surface_id, uint32_t* mode_bits, uint
 	if (!surface_client)
 		goto bad_exit;
 	*mode_bits = static_cast<uint32_t>(surface_client->getOriginalModeBits());
-#if 0
+#if 1
 	uint32_t some_mask = surface_client->0x10F0;
 	if (some_mask & 8U)
 		*mode_bits |= 0x200U;
@@ -270,7 +270,7 @@ IOReturn CLASS::get_surface_info(uintptr_t surface_id, uint32_t* mode_bits, uint
 								   &inner_height,
 								   &outer_width,
 								   &outer_height);
-#if 0
+#if 1
 	if (inner_width != outer_width || inner_height != outer_height) {
 		*width  = inner_width;
 		*height = inner_height;
@@ -347,7 +347,7 @@ IOReturn CLASS::new_texture(struct VendorNewTextureDataStruc const* struct_in,
 	*struct_out_size = sizeof *struct_out;
 	bzero(struct_out, sizeof *struct_out);
 	m_shared->lockShared();
-#if 0
+#if 1
 	m_provider->acceleratorWaitEnabled();
 #endif
 	switch (struct_in->type) {
@@ -481,7 +481,7 @@ IOReturn CLASS::page_off_texture(struct sIODevicePageoffTexture const* struct_in
 	if (struct_in->face >= 6U || struct_in->mipmap >= 12U)
 		return kIOReturnBadArgument;
 	m_shared->lockShared();
-#if 0
+#if 1
 	if (!byte ptr m_provider->0x80) {
 		m_shared->unlockShared();
 		return kIOReturnSuccess;
@@ -494,7 +494,7 @@ IOReturn CLASS::page_off_texture(struct sIODevicePageoffTexture const* struct_in
 	}
 	if (isPagedOn(tx->sys_obj, struct_in->face, struct_in->mipmap))
 		m_shared->pageoffDirtyTexture(tx);
-#if 0
+#if 1
 	m_provider->SyncToFence(tx->sys_obj->stamps[0]); // already done in pageoffDirtyTexture
 #endif
 	m_shared->unlockShared();

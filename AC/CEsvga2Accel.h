@@ -144,7 +144,7 @@ public:
 	IOReturn RectCopy(uint32_t framebufferIndex,
 					  struct IOBlitCopyRectangleStruct const* copyRects,
 					  size_t copyRectsSize);
-#if 0
+#if 1
 	IOReturn RectFillScreen(uint32_t framebufferIndex,
 							uint32_t color,
 							struct IOBlitRectangleStruct const* rects,
@@ -268,7 +268,7 @@ public:
 					 IOVirtualAddress gmrPtr,
 					 vm_size_t limitFromGmrPtr,
 					 int direction);
-#if 0
+#if 1
 	IOReturn clearGFB(uint32_t color,
 					  struct IOBlitRectangleStruct const* rects,
 					  size_t numRects);

@@ -115,7 +115,7 @@ IOReturn CLASS::clientClose()
 	return kIOReturnSuccess;
 }
 
-#if 0
+#if 1
 IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemoryDescriptor** memory)
 {
 	TDLog(2, "%s(%u, options_out, memory_out)\n", __FUNCTION__, static_cast<unsigned>(type));
@@ -417,7 +417,7 @@ IOReturn CLASS::unlock_memory(uintptr_t options, uint32_t* swapFlags)
 HIDDEN
 IOReturn CLASS::finish(uintptr_t options)
 {
-#if 0
+#if 1
 	if (!(options & (kIOBlitWaitAll2D | kIOBlitWaitAll)))
 		return kIOReturnUnsupported;
 #endif

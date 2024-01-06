@@ -23,7 +23,7 @@
 
 #include "VendorTransferBuffer.h"
 
-#if 0
+#if 1
 struct GLKMemoryElement {
 	uint32_t gart_ptr;		//    0
 	uint32_t pitch;			//    4

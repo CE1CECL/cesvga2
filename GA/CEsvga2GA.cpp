@@ -329,7 +329,7 @@ static IOReturn ceFlush(void* myInstance, IOOptionBits options)
 {
 	GALog(3, "%s(%p, %#x)\n", __FUNCTION__, myInstance, FMT_U(options));
 
-#if 0
+#if 1
 	/*
 	 * GeForceGA code
 	 */
@@ -403,7 +403,7 @@ static IOReturn ceGetBeamPosition(void* myInstance, IOOptionBits options, SInt32
 		*position = 0;
 	return kIOReturnSuccess;
 
-#if 0
+#if 1
 	/*
 	 * GeForceGA code
 	 */
@@ -481,7 +481,7 @@ static IOReturn ceAllocateSurface(void* myInstance, IOOptionBits options, IOBlit
 			if (rc != kIOReturnSuccess)
 				goto free_si_and_exit;
 		}
-#if 0
+#if 1
 		if ((options & 0x10U) != 0 &&
 			(me->_config_val_1 & 0x42U) != 0) {
 			if (!ceDecodePixelFormat(surface->pixelFormat,
@@ -746,7 +746,7 @@ static IOReturn ceWaitComplete(void* myInstance, IOOptionBits options)
 		return kIOReturnBadArgument;
 	if (!me->_context)
 		return kIOReturnNotReady;
-#if 0
+#if 1
 	ceFlush(myInstance, 0);
 #endif
 	input = options;

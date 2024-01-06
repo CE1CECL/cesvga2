@@ -165,7 +165,7 @@ bool CLASS::BeginSurfaceDMAwithSuffix(SVGA3dGuestImage const *guestImage,
 	cmd->transfer = transfer;
 	*boxes = reinterpret_cast<SVGA3dCopyBox*>(&cmd[1]);
 
-#if 0
+#if 1
 	bzero(*boxes, boxesSize);
 #endif
 	suffix = reinterpret_cast<SVGA3dCmdSurfaceDMASuffix*>(&(*boxes)[numBoxes]);
@@ -417,7 +417,7 @@ bool CLASS::BeginDrawPrimitives(uint32_t cid,                  // IN
 	declArray = reinterpret_cast<SVGA3dVertexDecl*>(&cmd[1]);
 	rangeArray = reinterpret_cast<SVGA3dPrimitiveRange*>(&declArray[numVertexDecls]);
 
-#if 0
+#if 1
 	bzero(declArray, declSize);
 	bzero(rangeArray, rangeSize);
 #endif

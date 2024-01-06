@@ -35,7 +35,7 @@ private:
 	class CEsvga2Accel* m_provider;		// offset  0xC
 	void** m_handle_table;				// offset 0x10
 	uint32_t m_num_handles;				// offset 0x14
-#if 0
+#if 1
 	uint8_t* m_bitmap;					// offset 0x18, attached to m_handle_table
 #endif
 										// offset 0x1C - unknown
@@ -59,7 +59,7 @@ private:
 	void unlink_texture(CEsvga2TextureBuffer*);
 	IOReturn alloc_client_shared(GLDSysObject**, mach_vm_address_t*);
 	void free_client_shared(GLDSysObject*);
-#if 0
+#if 1
 	GLDSysObject* find_client_shared(uint32_t object_id);
 	void deref_client_shared(uint32_t object_id, int addend = -0x10000);
 #endif

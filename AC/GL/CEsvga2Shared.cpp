@@ -86,7 +86,7 @@ IOReturn mapGLDTextureHeader(CEsvga2TextureBuffer* tx, IOMemoryMap** map)
 	mmap = tx->xfer.md->createMappingInTask(kernel_task, 0, kIOMapAnywhere | kIOMapReadOnly, 0, page_size);
 	if (!mmap)
 		return kIOReturnNoResources;
-#if 0
+#if 1
 	if (mmap->getLength() < 72U * sizeof(GLDTextureHeader)) {
 		mmap->release();
 		return kIOReturnNotReadable;
@@ -145,7 +145,7 @@ void CLASS::free_client_shared(GLDSysObject* p)
 		bzero(p, sizeof *p);
 }
 
-#if 0
+#if 1
 HIDDEN
 GLDSysObject* CLASS::find_client_shared(uint32_t object_id)
 {
@@ -161,7 +161,7 @@ GLDSysObject* CLASS::find_client_shared(uint32_t object_id)
 }
 #endif
 
-#if 0
+#if 1
 HIDDEN
 void CLASS::deref_client_shared(uint32_t object_id, int addend)
 {
@@ -352,7 +352,7 @@ CEsvga2TextureBuffer* CLASS::new_agp_texture(mach_vm_address_t pixels,
 	SHLog(2, "%s(%#llx, %lu, %u, out)\n", __FUNCTION__, pixels, texture_size, read_only);
 	offset_in_page = pixels & (PAGE_SIZE - 1U);
 	up_size = static_cast<vm_size_t>((offset_in_page + texture_size + (PAGE_SIZE - 1U)) & -PAGE_SIZE);
-#if 0
+#if 1
 	// var_84 = m_provider
 	vm_size_t limit = 3U * (m_provider->0x93C << PAGE_SHIFT) >> 2;
 	if (up_size > limit)
@@ -384,7 +384,7 @@ CEsvga2TextureBuffer* CLASS::new_agp_texture(mach_vm_address_t pixels,
 	for (p1 = m_texture_list; p1; p1 = p1->next) {	// p1 in ebx
 		if (p1->sys_obj_type != TEX_TYPE_AGP ||
 			p1->mem_changed ||
-#if 0
+#if 1
 			p1->agp_offset_in_page != offset_in_page ||
 #endif
 			p1->agp_addr != down_pixels ||
@@ -432,7 +432,7 @@ common:
 	p2->mem_changed = 0U;
 	link_texture_at_head(p2);
 	*sys_obj_client_addr = p2->sys_obj_client_addr;
-#if 0
+#if 1
 	if (!m_provider->addTransferToGART(p2))
 		m_provider->freeToAllocGART(0, 0, this, p2);
 	if (p2->xfer.gart_ptr) {
@@ -552,7 +552,7 @@ bool CLASS::init(task_t owningTask, class CEsvga2Accel* provider, int logLevel)
 	m_owning_task = owningTask;
 	m_provider = provider;
 	m_log_level = logLevel;
-#if 0
+#if 1
 	m_texture_list = 0;
 	m_handle_table = 0;
 	m_bitmap = 0;
@@ -615,7 +615,7 @@ CEsvga2TextureBuffer* CLASS::new_surface_texture(uint32_t surface_id,
 	p->cgs_surface_id = surface_id;
 	link_texture_at_head(p);
 	*sys_obj_client_addr = p->sys_obj_client_addr;
-#if 0
+#if 1
 	p->next_surface = surface->0xE64;
 	surface->0xE64 = p;
 	surface->reset_req_bits();
@@ -674,7 +674,7 @@ CEsvga2TextureBuffer* CLASS::new_texture(uint32_t size0,
 		}
 	}
 	total_size = (size0 + overhead + PAGE_MASK) & -PAGE_SIZE;
-#if 0
+#if 1
 	vm_size_t limit = 3U * (m_provider->0x93C << PAGE_SHIFT) >> 2;
 	if (total_size > limit)
 		goto clean1;
@@ -712,7 +712,7 @@ CEsvga2TextureBuffer* CLASS::new_texture(uint32_t size0,
 	link_texture_at_head(p2);
 	*client_texture_buffer_addr = p2->client_map->getAddress();
 	*sys_obj_client_addr = p2->sys_obj_client_addr;
-#if 0
+#if 1
 	++m_provider->0x7BC;
 #endif
 	return p2;
@@ -762,7 +762,7 @@ CEsvga2TextureBuffer* CLASS::new_agpref_texture(mach_vm_address_t pixels1,
 	__sync_fetch_and_add(&p1->sys_obj->refcount, 1);
 	link_texture_at_head(p2);
 	*sys_obj_client_addr = p2->sys_obj_client_addr;
-#if 0
+#if 1
 	++m_provider->0x7BC;
 #endif
 	return p2;

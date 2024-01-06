@@ -71,7 +71,7 @@ void CLASS::Cleanup()
 	if (m_restore_call)
 		thread_call_cancel(m_restore_call);
 	deleteRefreshTimer();
-#if 0
+#if 1
 	if (svga.HasCapability(0xFFFFFFFFU))
 		svga.Disable();
 #endif
@@ -196,7 +196,7 @@ void CLASS::ConvertAlphaCursor(uint32_t* cursor, uint32_t width, uint32_t height
 	__builtin_ia32_emms();
 #else /* VECTORIZE */
 	uint32_t num_pixels, pixel, alpha, r, g, b;
-#if 0
+#if 1
 	LogPrintf(2, "%s: %ux%u pixels @ %p\n", __FUNCTION__, width, height, cursor);
 #endif
 	for (num_pixels = width * height; num_pixels; --num_pixels, ++cursor) {
@@ -257,7 +257,7 @@ IOReturn CLASS::setCursorImage(void* cursorImage)
 			unsigned u = (cursorImage != 0 ? 1U : 0U);
 			m_hotspot_x = shmem->hotSpot[u].x;
 			m_hotspot_y = shmem->hotSpot[u].y;
-#if 0
+#if 1
 			if (shmem->cursorSize[u].width < 64)
 				curd.width = shmem->cursorSize[u].width;
 			if (shmem->cursorSize[u].height < 64)
@@ -671,7 +671,7 @@ IOReturn CLASS::setDisplayMode(IODisplayModeID displayMode, IOIndex depth)
 		m_depth_mode = 0;
 		return kIOReturnSuccess;
 	}
-#if 0
+#if 1
 	/*
 	 * CECLGfx 5.x
 	 */
@@ -752,7 +752,7 @@ void CLASS::CustomSwitchStepSet(uint32_t value)
 __attribute__((visibility("hidden")))
 void CLASS::EmitConnectChangedEvent()
 {
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 	while (!m_intr.proc) {
 		LogPrintf(3, "%s: Waiting for WindowServer.\n", __FUNCTION__);
 		IOSleep(1000);
@@ -849,28 +849,14 @@ IOReturn CLASS::CustomMode(CustomModeData const* inData, CustomModeData* outData
 			h = 768U;
 		else if (h > svga.getMaxHeight())
 			h = svga.getMaxHeight();
-#if 0	/* CECLGfx 5.x */
-		if (((w + 7U) & -8) * h > (1U << 22)) {
-			/*
-			 * finds max new_w:new_h with same aspect ratio as w:h
-			 * such that new_w * new_h <= 1U << 22.
-			 */
-			uint64_t U; uint32_t M;
-			U = (uint64_t) w * (1ULL << 22) / h;
-			/* find max M such that (uint64_t) M * M <= U; */
-			new_w = M & -8;
-			new_h = (new_u * h / w) & -2;
-			w = new_w; h = new_h;
-		}
-#endif
 		if (w == dme1->width && h == dme1->height)
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 			LogPrintf(3, "%s: Set resolution to %ux%u already set\n", __FUNCTION__, w, h);
 #endif
 			goto finish_up;
 		customMode.width = w;
 		customMode.height = h;
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 		LogPrintf(3, "s: Setting custom resolution to %ux%u.\n", __FUNCTION__, w, h);
 #endif
 		CustomSwitchStepSet(1U);
@@ -981,7 +967,8 @@ bool CLASS::start(IOService* provider)
 	 * Begin Added
 	 */
 	setProperty("CECLSVGAFBLogLevel", static_cast<uint64_t>(logLevelFB), 32U);
-	ce1_options_fb = CE1_OPTION_FB_FIFO_INIT | CE1_OPTION_FB_REFRESH_TIMER | CE1_OPTION_FB_ACCEL;
+//	ce1_options_fb = CE1_OPTION_FB_FIFO_INIT | CE1_OPTION_FB_REFRESH_TIMER | CE1_OPTION_FB_ACCEL;
+	ce1_options_fb = CE1_OPTION_FB_FIFO_INIT | CE1_OPTION_FB_REFRESH_TIMER | CE1_OPTION_FB_ACCEL | CE1_OPTION_FB_CURSOR_BYPASS_2 | CE1_OPTION_FB_REG_DUMP;
 	if (PE_parse_boot_argn("ce1_options_fb", &boot_arg, sizeof boot_arg))
 		ce1_options_fb = boot_arg;
 	setProperty("CECLSVGAFBOptions", static_cast<uint64_t>(ce1_options_fb), 32U);
@@ -1057,7 +1044,7 @@ bool CLASS::start(IOService* provider)
 	m_restore_call = thread_call_allocate(&_RestoreAllModes, this);
 	if (!m_restore_call) {
 		LogPrintf(1, "%s: Failed to allocate timer.\n", __FUNCTION__);
-#if 0	// Note: not a critical error
+#if 1	// Note: not a critical error
 		goto fail;
 #endif
 	}

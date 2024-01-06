@@ -366,7 +366,7 @@ char const* glrGetString(display_info_t* dinfo, int string_code)
 		case GL_RENDERER:
 			return &dinfo->engine1[0];
 		case GL_VERSION:
-#if 0
+#if 1
 			if (dinfo->config[0] & 0x100000U)
 				return "2.1 " GLD_VERSION;
 			if (dinfo->config[0] & 0x80000U)
@@ -376,7 +376,7 @@ char const* glrGetString(display_info_t* dinfo, int string_code)
 		case GL_EXTENSIONS:
 			break;
 		case GL_VENDOR + 4:
-#if 0
+#if 1
 			if (dinfo->config[0] & 0x100000U)
 				return "IntelHDGraphicsGLDriver";
 			if (dinfo->config[0] & 0x80000U)
@@ -442,13 +442,13 @@ int glrGetKernelTextureAGPRef(gld_shared_t* shared,
 	uint64_t input;
 	size_t outputStructCnt;
 	struct sIONewTextureReturnData outputStruct;
-#if 0
+#if 1
 	uint8_t ecx, edi, esi;
 #endif
 
 	// var_58 = shared;
 	// r14 = texture;
-#if 0
+#if 1
 	ecx = *MKOFS(uint8_t, 0x75, 0x7D, client_texture);
 	edi = *MKOFS(uint8_t, 0x78, 0x80, client_texture);
 	esi = 0;
@@ -502,7 +502,7 @@ int glrGetKernelTextureAGPRef(gld_shared_t* shared,
 	return rc;
 }
 
-#if 0
+#if 1
 int glrGetKernelTextureOrphanStandard(gld_shared_t* shared,
 									  gld_texture_t* texture,
 									  uint32_t size0,

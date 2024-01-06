@@ -32,14 +32,14 @@ class CEsvga2 : public IOFramebuffer
 private:
 	SVGADevice svga;				// (now * at 0x10C)
 	IODeviceMemory* m_vram;			// offset 0x110
-#if 0
+#if 1
 	IOMemoryMap* m_vram_kernel_map;	// offset 0x114
 	IOVirtualAddress m_vram_kernel_ptr;	// offset 0x118
 	IOPhysicalAddress m_fb_offset;	// offset 0x11C
 	uint32_t m_aperture_size;		// offset 0x120
 #endif
 	uint32_t m_num_active_modes;	// offset 0x124
-#if 0
+#if 1
 	uint32_t m_max_width;			// offset 0x128
 	uint32_t m_max_height;			// offset 0x12C
 #endif
@@ -49,7 +49,7 @@ private:
 	IODisplayModeID m_modes[NUM_DISPLAY_MODES];	// offset 0x13C (16 entries)
 	uint32_t m_custom_switch;		// offset 0x17C
 	bool m_custom_mode_switched;	// offset 0x180
-#if 0
+#if 1
 	uint32_t m_custom_mode_width;	// offset 0x184
 	uint32_t m_custom_mode_height;	// offset 0x188
 #endif
@@ -150,7 +150,7 @@ public:
 	bool supportsAccel();
 	void useAccelUpdates(bool state);
 
-#if 0
+#if 1
 	IOReturn getStartupDisplayMode(IODisplayModeID* displayMode, IOIndex* depth);
 	IOReturn getTimingInfoForDisplayMode(IODisplayModeID displayMode, IOTimingInformation* info);
 	IOReturn setDetailedTimings(OSArray* array);

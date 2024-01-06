@@ -50,7 +50,7 @@ IOExternalMethod* CLASS::getTargetAndMethodForIndex(IOService** targetP, UInt32 
 	DVDLog(1, "%s(target_out, %u)\n", __FUNCTION__, static_cast<unsigned>(index));
 	if (!targetP || index >= kIOCEDVDNumMethods)
 		return 0;
-#if 0
+#if 1
 	if (index >= kIOCEDVDNumMethods) {
 		if (m_provider)
 			*targetP = m_provider;

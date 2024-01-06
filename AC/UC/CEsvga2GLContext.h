@@ -167,7 +167,7 @@ public:
 	IOReturn clientClose();
 	IOReturn clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemoryDescriptor** memory);
 	IOReturn connectClient(IOUserClient* client);
-#if 0
+#if 1
 	IOReturn externalMethod(uint32_t selector, IOExternalMethodArguments* arguments, IOExternalMethodDispatch* dispatch = 0, OSObject* target = 0, void* reference = 0);
 #endif
 	bool start(IOService* provider);

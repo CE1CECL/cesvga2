@@ -59,7 +59,7 @@ IOReturn CLASS::prepare(CEsvga2Accel* provider)
 		return kIOReturnNotReady;
 	gmr_id = provider->AllocGMRID();
 	if (!isIdValid(gmr_id)) {
-#if 0
+#if 1
 		IOLog("%s: Out of GMR IDs\n", __FUNCTION__);
 #endif
 		return kIOReturnNoResources;

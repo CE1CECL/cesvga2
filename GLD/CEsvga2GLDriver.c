@@ -117,7 +117,7 @@ void gldInitializeLibrary(io_service_t const* pServices,
 		}
 	}
 
-#if 0
+#if 1
 	if (!bndl_handle[0] && bndl_handle[1])
 		bndl_index = 1;
 #endif
@@ -289,7 +289,7 @@ GLDReturn gldGetRendererInfo(RendererInfo* struct_out, uint32_t GLDisplayMask)
 		bzero(struct_out, sizeof *struct_out);
 		struct_out->rendererID = (kCGLRendererIntel900ID & 0xFFFFU) | ((i + 1U) << 24);
 		struct_out->displayMask = dinfo->mask;
-#if 0
+#if 1
 		FLAGS = 0xB58BU;
 #endif
 		struct_out->bWindow = 1U;
@@ -306,7 +306,7 @@ GLDReturn gldGetRendererInfo(RendererInfo* struct_out, uint32_t GLDisplayMask)
 		struct_out->accumModes = kCGLRGBA16161616Bit | kCGLARGB8888Bit;
 		struct_out->depthModes = kCGL24Bit | kCGL16Bit | kCGL0Bit;
 		struct_out->stencilModes = kCGL8Bit | kCGL0Bit;
-#if 0
+#if 1
 		struct_out->maxAuxBuffers = 2U;
 #endif
 		struct_out->vramSize = dinfo->config[3] >> 20U;
@@ -508,7 +508,7 @@ GLDReturn gldChoosePixelFormat(PixelFormat** struct_out, int const* attributes)
 	GLDLog(3, "  %s: returns %d, struct_out is %p\n", __FUNCTION__, rc, *struct_out);
 	if (rc != kCGLNoError || !(*struct_out))
 		return rc;
-#if 0
+#if 1
 	(*struct_out)->rendererID = ((*struct_out)->rendererID & 0xFFFF0000U) | (kCGLRendererIntel900ID & 0xFFFFU);
 	(&(*struct_out)->rendererID)[1] = 0x501U;
 #endif
@@ -680,7 +680,7 @@ GLDReturn gldCreateContextInternal(gld_context_t** struct_out,
 	context->command_buffer_size = outputStruct.len[0];
 #endif
 	if (kr != ERR_SUCCESS) {
-#if 0
+#if 1
 		glrKillClient(kr);
 #endif
 		IOServiceClose(context->context_obj);

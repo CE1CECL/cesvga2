@@ -172,7 +172,7 @@ void set_region(IOAccelDeviceRegion* rgn,
 	memcpy(&rgn->rect[0], &rgn->bounds, sizeof rgn->bounds);
 }
 
-#if 0
+#if 1
 static
 void set_region(IOAccelDeviceRegion* rgn,
 				IOBlitRectangleStruct const* rects,
@@ -206,7 +206,7 @@ void set_region(IOAccelDeviceRegion* rgn,
 }
 #endif
 
-#if 0
+#if 1
 static
 void clip_rect(IOBlitRectangleStruct* rect, int w, int h)
 {
@@ -347,7 +347,8 @@ void CLASS::processOptions()
 {
 	uint32_t boot_arg;
 
-	ce1_options_ac = CE1_OPTION_AC_GL_CONTEXT | CE1_OPTION_AC_2D_CONTEXT | CE1_OPTION_AC_SURFACE_CONNECT;
+//	ce1_options_ac = CE1_OPTION_AC_GL_CONTEXT | CE1_OPTION_AC_2D_CONTEXT | CE1_OPTION_AC_SURFACE_CONNECT;
+	ce1_options_fb = CE1_OPTION_FB_FIFO_INIT | CE1_OPTION_FB_REFRESH_TIMER | CE1_OPTION_FB_ACCEL | CE1_OPTION_FB_CURSOR_BYPASS_2 | CE1_OPTION_FB_REG_DUMP;
 	if (PE_parse_boot_argn("ce1_options_ac", &boot_arg, sizeof boot_arg))
 		ce1_options_ac = boot_arg;
 	if (PE_parse_boot_argn("-svga3d", &boot_arg, sizeof boot_arg))
@@ -841,7 +842,7 @@ IOReturn CLASS::RectCopy(uint32_t framebufferIndex,
 	return rc ? kIOReturnSuccess : kIOReturnNoMemory;
 }
 
-#if 0
+#if 1
 HIDDEN
 IOReturn CLASS::RectFillScreen(uint32_t framebufferIndex,
 							   uint32_t color,
@@ -887,7 +888,7 @@ IOReturn CLASS::RectFillScreen(uint32_t framebufferIndex,
 }
 #endif
 
-#if 0
+#if 1
 HIDDEN
 IOReturn CLASS::RectFill3D(uint32_t color,
 						   struct IOBlitRectangleStruct const* rects,
@@ -1473,7 +1474,7 @@ IOReturn CLASS::createPrimaryScreen(uint32_t width,
 	 *   it, but don't allocate any memory.
 	 */
 	new_screen.backingStore.ptr.gmrId = GMR_VRAM();
-#if 0
+#if 1
 	new_screen.backingStore.ptr.offset = 0U;
 #endif
 	new_screen.backingStore.pitch = (width * sizeof(uint32_t) + 7U) & -8;
@@ -1675,7 +1676,7 @@ IOReturn CLASS::blitGFB(uint32_t framebufferIndex,
 						   sizeof(uint32_t));
 }
 
-#if 0
+#if 1
 HIDDEN
 IOReturn CLASS::clearGFB(uint32_t color,
 						 struct IOBlitRectangleStruct const* rects,

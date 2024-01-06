@@ -532,7 +532,7 @@ void CLASS::discardCommandBuffer()
 HIDDEN
 void CLASS::removeTextureFromStream(CEsvga2TextureBuffer* tx)
 {
-#if 0
+#if 1
 	/*
 	 * TBD
 	 */
@@ -589,7 +589,7 @@ void CLASS::submit_midbuffer(VendorGLStreamInfo* info)
 	if (!wc)
 		return;
 	if (wc > 2U) {
-#if 0
+#if 1
 		m_provider->0x78C += (wc - 2U) * static_cast<uint32_t>(sizeof(uint32_t));
 		m_command_buffer.submit_stamp =
 		m_provider->submit_buffer(&m_command_buffer.kernel_ptr.downstream[0] + info->dso_bytes / sizeof(uint32_t),
@@ -611,18 +611,18 @@ void CLASS::submit_midbuffer(VendorGLStreamInfo* info)
 HIDDEN
 void CLASS::get_texture(VendorGLStreamInfo* info, CEsvga2TextureBuffer* tx, bool flag)
 {
-#if 0
+#if 1
 	CEsvga2TextureBuffer* ltx;
 #endif
 	if (tx->sys_obj->in_use) {
 		submit_midbuffer(info);
 		alloc_and_load_texture(tx);
-#if 0
+#if 1
 		if (flag & !m_command_buffer.xfer.gart_ptr)
 			mapTransferToGART(&m_command_buffer.xfer);
 #endif
 	}
-#if 0
+#if 1
 	ltx = tx;
 	if (ltx->sys_obj_type == TEX_TYPE_IOSURFACE)
 		ltx = ltx->linked_agp;
@@ -672,7 +672,7 @@ void CLASS::get_tex_data(CEsvga2TextureBuffer* tx, uint32_t* tex_gart_address, u
 HIDDEN
 void CLASS::write_tex_data(uint32_t i, uint32_t* q, CEsvga2TextureBuffer* tx)
 {
-#if 0
+#if 1
 	int fmt;
 	uint32_t width, pitch;
 	uint16_t height, depth;
@@ -1240,7 +1240,7 @@ void CLASS::process_token_TextureNonVolatile(VendorGLStreamInfo* info)
 HIDDEN
 void CLASS::process_token_SetSurfaceState(VendorGLStreamInfo* info)
 {
-#if 0
+#if 1
 	if (info->p[1] == 306U &&
 		m_surface_client) {
 		m_surface_client->set_volatile_state(info->p[2]);
@@ -1340,7 +1340,7 @@ void CLASS::process_token_BindDrawFBO(VendorGLStreamInfo* info)
 		__sync_fetch_and_add(&tx->sys_obj->refcount, -0xFFFF);
 	}
 	bzero(&info->p[0], 12U * sizeof(uint32_t));
-#if 0
+#if 1
 	if (info->f3 && !m_command_buffer.xfer.gart_ptr)
 		mapTransferToGART(&m_command_buffer.xfer);
 #endif
@@ -1423,7 +1423,7 @@ void CLASS::process_token_BindReadFBO(VendorGLStreamInfo* info)
 		__sync_fetch_and_add(&tx->sys_obj->refcount, -0xFFFF);
 	}
 	bzero(&info->p[0], 12U * sizeof(uint32_t));
-#if 0
+#if 1
 	if (info->f3 && !m_command_buffer.xfer.gart_ptr)
 		mapTransferToGART(&m_command_buffer.xfer);
 #endif
@@ -1513,7 +1513,7 @@ void CLASS::discard_token_Texture(VendorGLStreamInfo* info)
 		if (!tx) {
 			info->cmd = 0U;
 			info->ds_count_dwords = 0;
-#if 0
+#if 1
 			m_provider->0x50 -= info->f2;
 #endif
 			m_stream_error = 2;
@@ -1537,7 +1537,7 @@ void CLASS::discard_token_NoTex(VendorGLStreamInfo* info)
 		if (!tx) {
 			info->cmd = 0U;
 			info->ds_count_dwords = 0;
-#if 0
+#if 1
 			m_provider->0x50 -= info->f2;
 #endif
 			m_stream_error = 2;
@@ -1565,7 +1565,7 @@ void CLASS::discard_token_VertexBuffer(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1597,7 +1597,7 @@ void CLASS::discard_token_DrawBuffer(VendorGLStreamInfo* info)
 			m_drawbuf_params[0] = 1U;
 			break;
 	}
-#if 0
+#if 1
 	/*
 	 * Some test for a depth buffer
 	 */
@@ -1627,7 +1627,7 @@ void CLASS::discard_token_TexSubImage2D(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1645,7 +1645,7 @@ void CLASS::discard_token_CopyPixelsDst(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1664,7 +1664,7 @@ void CLASS::discard_token_AsyncReadDrawBuffer(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1686,7 +1686,7 @@ void CLASS::process_token_Texture(VendorGLStreamInfo* info)
 	p = info->p; // var_38
 	q = &info->p[2];	// var_2c
 	bit_mask = p[1];	// var_34
-#if 0
+#if 1
 	this->0x238 = bit_mask;
 #endif
 	count = 0U; // var_30
@@ -1704,7 +1704,7 @@ void CLASS::process_token_Texture(VendorGLStreamInfo* info)
 		if (!tx) {
 			info->cmd = 0U;
 			info->ds_count_dwords = 0;
-#if 0
+#if 1
 			m_provider->0x50 -= info->f2;
 #endif
 			m_stream_error = 2;
@@ -1720,7 +1720,7 @@ void CLASS::process_token_Texture(VendorGLStreamInfo* info)
 		}
 		get_texture(info, tx, true);
 		__sync_fetch_and_add(&tx->sys_obj->refcount, -0xFFFF);
-#if 0
+#if 1
 		this->0x240 = 0U;
 		this->0x244 = q[1];
 		this->0x248 = q[2];
@@ -1729,7 +1729,7 @@ void CLASS::process_token_Texture(VendorGLStreamInfo* info)
 		m_txs[i] = tx;
 		q += 3;
 	}
-#if 0
+#if 1
 	this->0x23C = count;
 #endif
 	if (count)
@@ -1749,7 +1749,7 @@ void CLASS::process_token_NoTex(VendorGLStreamInfo* info)
 		if (!tx) {
 			info->cmd = 0U;
 			info->ds_count_dwords = 0;
-#if 0
+#if 1
 			m_provider->0x50 -= info->f2;
 #endif
 			m_stream_error = 2;
@@ -1784,7 +1784,7 @@ void CLASS::process_token_VertexBuffer(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1800,13 +1800,13 @@ void CLASS::process_token_VertexBuffer(VendorGLStreamInfo* info)
 	}
 	if (!m_txs[16]->xfer.gart_ptr) {
 		submit_midbuffer(info);
-#if 0
+#if 1
 		mapTransferToGART(&tx.xfer);
 		if (!m_command_buffer.xfer.gart_ptr)
 			mapTransferToGART(&m_command_buffer.xfer);
 #endif
 	}
-#if 0
+#if 1
 	info->p[0] = 0x4CU; // TBD... strange doesn't look like an opcode, maybe middle of an Intel CMD
 	info->p[1] = tx->xfer.gart_ptr + 128U;	// Looks like this is a gart_ptr for a TEX_TYPE_VB texture with offset 0x80
 #else
@@ -1827,7 +1827,7 @@ void CLASS::process_token_NoVertexBuffer(VendorGLStreamInfo* info)
 		--m_txs[16]->xfer.counter14;
 		m_txs[16] = 0;
 	}
-#if 0
+#if 1
 	info->p[0] = 0x4CU;	// TBD... and again
 #else
 	info->p[0] = 0U;
@@ -1880,7 +1880,7 @@ void CLASS::process_token_SetFence(VendorGLStreamInfo* info)
 	if (fence_num * sizeof(GLDFence) >= m_fences_len) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1890,7 +1890,7 @@ void CLASS::process_token_SetFence(VendorGLStreamInfo* info)
 	info->p[1] = 0x10800001U;	// MI_STORE_DATA_INDEX
 	info->p[2] = 64U;
 	info->p[3] = fence_num /* m_provider->0x50 */;
-#if 0
+#if 1
 	m_fences_ptr[fence_num].u = 0U /* m_provider->0x50++ */;
 	m_fences_ptr[fence_num].v = 0U;
 	++info->f2;
@@ -1902,7 +1902,7 @@ void CLASS::process_token_TexSubImage2D(VendorGLStreamInfo* info)
 {
 	CEsvga2TextureBuffer* tx;
 	GLDTexSubImage2DStruc* helper = reinterpret_cast<typeof helper>(&info->p[1]);
-#if 0
+#if 1
 	uint32_t dest_gart_addr /* var_20 */, dest_pitch /* var_24 */, face, mipmap, height /* var_2c */;
 	uint32_t ip1 /* var_30 */, ip3 /* esi */, ip8 /* var_34 */;
 	// edi = info
@@ -1920,7 +1920,7 @@ void CLASS::process_token_TexSubImage2D(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
@@ -1940,7 +1940,7 @@ void CLASS::process_token_TexSubImage2D(VendorGLStreamInfo* info)
 #endif
 	}
 	get_texture(info, tx, true);
-#if 0
+#if 1
 	get_tex_data(tx, &dest_gart_addr, &dest_pitch, 0);
 	height = tx->vram_tile_pages >> 32; /* should be texture height, how did it get here? */;
 	face = helper->face;
@@ -1975,7 +1975,7 @@ HIDDEN
 void CLASS::process_token_CopyPixelsDst(VendorGLStreamInfo* info)
 {
 	CEsvga2TextureBuffer* tx;
-#if 0
+#if 1
 	uint32_t gart_ptr, gart_pitch;
 	uint8_t face, mipmap;
 #endif
@@ -1985,13 +1985,13 @@ void CLASS::process_token_CopyPixelsDst(VendorGLStreamInfo* info)
 	if (!tx) {
 		info->cmd = 0U;
 		info->ds_count_dwords = 0;
-#if 0
+#if 1
 		m_provider->0x50 -= info->f2;
 #endif
 		m_stream_error = 2;
 		return;
 	}
-#if 0
+#if 1
 	addTextureToStream(tx);
 	get_texture(info, tx, true);
 	face = info->p[4] >> 16;

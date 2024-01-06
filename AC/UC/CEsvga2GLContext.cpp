@@ -118,7 +118,7 @@ void unlockAccel(CEsvga2Accel* accel)
 {
 }
 
-#if 0
+#if 1
 static inline
 void memset32(void* dest, uint32_t value, size_t size)
 {
@@ -228,7 +228,7 @@ bool CLASS::allocAllContextBuffers()
 	p->flags = 1;
 	p->data[3] = 1007;
 
-#if 0
+#if 1
 	// This buffer is never used, so skip it
 	/*
 	 * Intel915 ors an optional flag @ IOAccelerator+0x924
@@ -276,7 +276,7 @@ IOExternalMethod* CLASS::getTargetAndMethodForIndex(IOService** targetP, UInt32 
 		GLLog(2, "%s(target_out, %u)\n", __FUNCTION__, static_cast<unsigned>(index));
 	if (!targetP || index >= kIOCEGLNumMethods)
 		return 0;
-#if 0
+#if 1
 	if (index >= kIOCEGLNumMethods) {
 		if (m_provider)
 			*targetP = m_provider;
@@ -336,7 +336,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 			if (!m_shared || !m_ipp)
 				return kIOReturnNotReady;
 			m_shared->lockShared();
-#if 0
+#if 1
 			for (d = 0U; d != 21U; ++d)
 				if (m_txs[i])
 					addTextureToStream(m_txs[i]);
@@ -348,7 +348,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 				*memory = 0;
 				return kIOReturnBadArgument;
 			}
-#if 0
+#if 1
 			for (d = 0U; d != 21U; ++d)
 				if (m_txs[d])
 					removeTextureFromStream(m_txs[d]);
@@ -380,7 +380,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 			p->downstream[0] = 1U << 24;	// terminating token
 			p->stamp = 0 /* this->0x7C */;
 			unlockAccel(m_provider);
-#if 0
+#if 1
 			sleepForSwapCompleteNoLock(var_84);
 #endif
 			return kIOReturnSuccess;
@@ -437,7 +437,7 @@ IOReturn CLASS::clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemory
 			*memory = m_fences;
 			return kIOReturnSuccess;
 		case 3:
-#if 0
+#if 1
 			md = m_provider->offset 0xB4;
 			if (!md)
 				return kIOReturnNoResources;
@@ -492,7 +492,7 @@ IOReturn CLASS::connectClient(IOUserClient* client)
 	return kIOReturnSuccess;
 }
 
-#if 0
+#if 1
 /*
  * Note: IONVGLContext has an override on this method
  *   In OS 10.5 it redirects function number 17 to get_data_buffer()
@@ -632,7 +632,7 @@ HIDDEN
 IOReturn CLASS::set_swap_rect(intptr_t x, intptr_t y, intptr_t w, intptr_t h)
 {
 	GLLog(2, "%s(%ld, %ld, %ld, %ld)\n", __FUNCTION__, x, y, w, h);
-#if 0
+#if 1
 	IOAccelBounds this->0x94;
 	this->0x94.x = x;
 	this->0x94.y = y;
@@ -646,7 +646,7 @@ HIDDEN
 IOReturn CLASS::set_swap_interval(intptr_t c1, intptr_t c2)
 {
 	GLLog(2, "%s(%ld, %ld)\n", __FUNCTION__, c1, c2);
-#if 0
+#if 1
 	IOAccelSize this->0x9C;
 	this->0x9C.w = c1;
 	this->0x9C.h = c2;
@@ -674,7 +674,7 @@ IOReturn CLASS::get_surface_size(uint32_t* inner_width, uint32_t* inner_height, 
 		return kIOReturnError;
 	m_surface_client->getBoundsForGL(inner_width, inner_height, outer_width, outer_height);
 	GLLog(2, "%s(*%u, *%u, *%u, *%u)\n", __FUNCTION__, *inner_width, *inner_height, *outer_width, *outer_height);
-#if 0
+#if 1
 	ebx = m_surface_client->0xE70.w;	// sign extended
 	ecx = m_surface_client->0xE70.h;	// sign extended
 	edi = m_surface_client->0xE6C.w;	// zero extended
@@ -720,7 +720,7 @@ IOReturn CLASS::get_surface_info(uintptr_t surface_id, uint32_t* mode_bits, uint
 	if (!surface_client)
 		goto bad_exit;
 	*mode_bits = static_cast<uint32_t>(surface_client->getOriginalModeBits());
-#if 0
+#if 1
 	uint32_t some_mask = surface_client->0x10F0;
 	if (some_mask & 8U)
 		*mode_bits |= 0x200U;
@@ -731,7 +731,7 @@ IOReturn CLASS::get_surface_info(uintptr_t surface_id, uint32_t* mode_bits, uint
 								   &inner_height,
 								   &outer_width,
 								   &outer_height);
-#if 0
+#if 1
 	if (inner_width != outer_width || inner_height != outer_height) {
 		*width  = inner_width;
 		*height = inner_height;
@@ -772,7 +772,7 @@ IOReturn CLASS::read_buffer(struct sIOGLContextReadBufferData const* struct_in, 
 		  struct_in->x, struct_in->y, struct_in->width, struct_in->height,
 		  struct_in->data_type, struct_in->pitch, struct_in->addr);
 #endif
-#if 0
+#if 1
 	// var_20 = 0xa0a;
 	// var_34 = 3;
 	// var_74 = struct_in->data[0];
@@ -925,7 +925,7 @@ HIDDEN
 IOReturn CLASS::set_surface_volatile_state(uintptr_t /* eSurfaceVolatileState */ new_state)
 {
 	GLLog(2, "%s(%lu)\n", __FUNCTION__, new_state);
-#if 0
+#if 1
 	lockAccel(m_provider);
 	this->0xC0 = new_state;
 	if (surface_client)
@@ -993,7 +993,7 @@ IOReturn CLASS::set_surface_get_config_status(struct sIOGLContextSetSurfaceData 
 		scale.source.w = scale.buffer.w;
 		scale.source.h = scale.buffer.h;
 		lockAccel(m_provider);	// Moved
-#if 0
+#if 1
 		while (1) {
 			if (!m_surface_client) {
 				unlockAccel(m_provider);
@@ -1047,7 +1047,7 @@ HIDDEN
 IOReturn CLASS::reclaim_resources()
 {
 	GLLog(2, "%s()\n", __FUNCTION__);
-#if 0
+#if 1
 	lockAccel(m_provider);
 	dword ptr m_provider->0x628 = 0x10000;
 	unlockAccel(m_provider);
@@ -1066,7 +1066,7 @@ HIDDEN
 IOReturn CLASS::set_stereo(uintptr_t c1, uintptr_t c2)
 {
 	GLLog(2, "%s(%lu, %lu)\n", __FUNCTION__, c1, c2);
-#if 0
+#if 1
 	IOReturn rc;
 
 	lockAccel(m_provider);
@@ -1084,7 +1084,7 @@ HIDDEN
 IOReturn CLASS::purge_accelerator(uintptr_t c1)
 {
 	GLLog(2, "%s(%lu)\n", __FUNCTION__, c1);
-#if 0
+#if 1
 	return m_provider->purgeAccelerator(c1);
 #endif
 	return kIOReturnSuccess;

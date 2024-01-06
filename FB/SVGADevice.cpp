@@ -85,7 +85,7 @@ bool CLASS::Init()
 {
 	LogPrintf(2, "%s: \n", __FUNCTION__);
 	m_provider = 0;
-#if 0
+#if 1
 	m_bar0_map = 0;
 #endif
 	m_bar2_map = 0;
@@ -120,7 +120,7 @@ void CLASS::Cleanup()
 {
 	if (m_provider)
 		m_provider = 0;
-#if 0
+#if 1
 	if (m_bar0_map) {
 		m_bar0_map->release();
 		m_bar0_map = 0;
@@ -168,7 +168,7 @@ bool CLASS::Start(IOPCIDevice* provider)
 		return false;
 	}
 	m_io_base = static_cast<uint16_t>(bar->getPhysicalAddress());
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 	WriteReg(SVGA_REG_ENABLE, 0U);
 #endif
 	WriteReg(SVGA_REG_ID, SVGA_ID_2);
@@ -179,7 +179,7 @@ bool CLASS::Start(IOPCIDevice* provider)
 		Cleanup();
 		return false;
 	}
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 	WriteReg(SVGA_REG_CONFIG_DONE, 0U);
 	WriteReg(SVGA_REG_ENABLE, 1U);
 #endif
@@ -192,7 +192,7 @@ bool CLASS::Start(IOPCIDevice* provider)
 		return false;
 	}
 #endif
-#if 0
+#if 1
 	/*
 	 * CECLGfx 5.x moved here from FIFOInit()
 	 */
@@ -214,7 +214,7 @@ bool CLASS::Start(IOPCIDevice* provider)
 	if (!m_bar2_map)
 		goto bar2_error;
 	m_fifo_ptr = reinterpret_cast<uint32_t*>(m_bar2_map->getVirtualAddress());
-#if 0
+#if 1
 	/*
 	 * CECLGfx 5.x
 	 */
@@ -253,7 +253,7 @@ bool CLASS::Start(IOPCIDevice* provider)
 	if (HasCapability(SVGA_CAP_GMR2))
 		LogPrintf(3, "%s: SVGA max GMR Pages == %u, total dedicated device memory == %u\n", __FUNCTION__,
 				  m_max_gmr_pages, m_total_memory);
-#if 0	/* CECLGfx 5.x */
+#if 1	/* CECLGfx 5.x */
 	WriteReg(SVGA_REG_DISPLAY_ID, 0U);
 	if (!FIFOInit()) {
 		LogPrintf(1, "%s: Failed FIFOInit.\n", __FUNCTION__);
@@ -263,12 +263,6 @@ bool CLASS::Start(IOPCIDevice* provider)
 #endif
 	if (HasCapability(SVGA_CAP_TRACES))
 		WriteReg(SVGA_REG_TRACES, 1);
-#if 0
-	/*
-	 * CECLGfx 5.x
-	 */
-	//SetMode(1024U, 768U, 32U);
-#endif
 	m_bounce_buffer = static_cast<uint8_t*>(IOMalloc(BOUNCE_BUFFER_SIZE));
 	if (!m_bounce_buffer) {
 		LogPrintf(1, "%s: Failed to allocate the bounce buffer.\n", __FUNCTION__);

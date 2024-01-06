@@ -31,7 +31,7 @@ class SVGADevice
 {
 private:
 	IOPCIDevice* m_provider;	// offset 0
-#if 0
+#if 1
 	IOMemoryMap* m_bar0_map;	// offset 4
 #endif
 	IOMemoryMap* m_bar2_map;	// offset 8

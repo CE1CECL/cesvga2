@@ -208,7 +208,7 @@ public:
 	 */
 	IOExternalMethod* getTargetAndMethodForIndex(IOService** targetP, UInt32 index);
 	IOReturn clientClose();
-#if 0
+#if 1
 	IOReturn clientMemoryForType(UInt32 type, IOOptionBits* options, IOMemoryDescriptor** memory);
 #endif
 	IOReturn externalMethod(uint32_t selector,

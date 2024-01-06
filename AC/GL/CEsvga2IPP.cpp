@@ -463,7 +463,7 @@ void CLASS::Cleanup()
 	if (!m_provider)
 		goto no_provider;
 	if (isIdValid(m_context_id)) {
-#if 0
+#if 1
 		unbind_samplers(0xFFFFU);	// Assume referenced surfaces be released anyhow
 		detach_render_targets();	// same assumption
 #endif
@@ -555,7 +555,7 @@ void CLASS::purge_shader_cache()
 	if (!svga3d)
 		goto just_delete_them;
 	svga3d->SetShader(m_context_id, SVGA3D_SHADERTYPE_PS, SVGA_ID_INVALID);
-#if 0
+#if 1
 	svga3d->SetShader(m_context_id, SVGA3D_SHADERTYPE_VS, SVGA_ID_INVALID);
 #endif
 	m_active_shid = SVGA_ID_INVALID - 1;
@@ -1563,7 +1563,7 @@ void CLASS::ip_select_and_load_ps(uint32_t* p, uint32_t cmd)
 	/*
 	 * Simplified shader support
 	 */
-#if 0
+#if 1
 	uint32_t s4 = imm_s[4];
 	tc2s_map = TC2S_MAP_ID;
 	tc2s_map_valids = TC2S_MAP_ID_VALIDS;
@@ -1583,7 +1583,7 @@ void CLASS::ip_select_and_load_ps(uint32_t* p, uint32_t cmd)
 	SVGA3D* svga3d = m_provider->lock3D();
 	if (!svga3d)
 		return;
-#if 0
+#if 1
 	if (s4 & (1U << 11))	/* S4_VFMT_SPEC_FOG */
 		svga3d->SetShader(m_context_id, SVGA3D_SHADERTYPE_PS, 3U);
 	else if ((imm_s[2] & 15U) != 15U) /* Tex1 + Diffuse */

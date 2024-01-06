@@ -58,7 +58,7 @@ IOExternalMethod* CLASS::getTargetAndMethodForIndex(IOService** targetP, UInt32 
 		OCDLog(1, "%s(target_out, %u)\n", __FUNCTION__, static_cast<unsigned>(index));
 	if (!targetP || index >= kIOCEOCDNumMethods)
 		return 0;
-#if 0
+#if 1
 	if (index >= kIOCEOCDNumMethods) {
 		if (m_provider)
 			*targetP = m_provider;

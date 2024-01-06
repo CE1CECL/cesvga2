@@ -158,7 +158,7 @@ static
 int select_ds_format(int context_mode_bits)
 {
 	if (context_mode_bits & CGLCMB_StencilMode0) {
-#if 0
+#if 1
 		if (context_mode_bits & CGLCMB_DepthMode32)
 			return SVGA3D_Z_D24S8;
 		return SVGA3D_Z_D15S1;
@@ -167,7 +167,7 @@ int select_ds_format(int context_mode_bits)
 #endif
 	}
 	if (context_mode_bits & CGLCMB_DepthMode32) {
-#if 0
+#if 1
 		if (context_mode_bits & CGLCMB_DepthMode16)
 			return SVGA3D_Z_D24X8;
 		return SVGA3D_Z_D32;
@@ -203,7 +203,7 @@ IOReturn CLASS::clientClose()
 	return kIOReturnSuccess;
 }
 
-#if 0
+#if 1
 /*
  * Note: for NVSurface
  *   In OS 10.5 this method actually does something
@@ -1516,7 +1516,7 @@ IOReturn CLASS::surface_flush(uintptr_t framebufferMask, IOOptionBits options)
 		return kIOReturnNotReady;
 	if (bVideoMode)
 		return kIOReturnSuccess;
-#if 0
+#if 1
 	if (!(framebufferMask & (1UL << m_framebufferIndex)))
 		return kIOReturnSuccess;	// Note: nothing to do
 #endif
@@ -1684,7 +1684,7 @@ IOReturn CLASS::set_shape_backing_length_ext(eIOAccelSurfaceShapeBits options,
 {
 	bool bAllocShapeOk, bFromGFB;
 
-#if 0
+#if 1
 	int const expectedOptions = kIOAccelSurfaceShapeIdentityScaleBit | kIOAccelSurfaceShapeFrameSyncBit;
 #endif
 
@@ -1730,7 +1730,7 @@ IOReturn CLASS::set_shape_backing_length_ext(eIOAccelSurfaceShapeBits options,
 
 	clearLastRegion();
 	bzero(&m_client_backing, sizeof m_client_backing);
-#if 0
+#if 1
 	if (!(options & kIOAccelSurfaceShapeNonBlockingBit))	// driver doesn't support waiting on locks
 		return kIOReturnUnsupported;
 	if ((options & expectedOptions) != expectedOptions)
@@ -1975,7 +1975,7 @@ IOReturn CLASS::copy_framebuffer_region_to_self(uint32_t framebufferIndex,
 										&extra,
 										&m_backing.vtb.fence);
 	} else if (bHaveMasterSurface) {
-#if 0
+#if 1
 		/*
 		 * Note: This does not work if offset comes out negative.
 		 */
@@ -2082,7 +2082,7 @@ IOReturn CLASS::copy_surface_region_to_self(class CEsvga2Surface* source_surface
 			  __FUNCTION__, source_surface->m_wID, source_surface->m_surfaceFormat, m_wID, m_surfaceFormat);
 		return kIOReturnUnsupported;
 	}
-#if 0
+#if 1
 	if (source_surface->bGLMode) {
 		/*
 		 * Note: The WindowServer calls this blit right

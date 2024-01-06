@@ -496,7 +496,7 @@ IOReturn CLASS::Init(void* startAddress, size_t bytes)
 	int const minBits = 12;
 	int const numSizes = 13;
 
-#if 0
+#if 1
 	if ((1UL << minBits) < sizeof(pool_size_t) * FREEBLOCK)
 		return kIOReturnBadArgument /* "minBits too small" */ ;
 	if (numSizes <= 0)
