@@ -1,0 +1,107 @@
+<!--
+
+    CEsvga2 - ChrisEric1 Super Video Graphics Array 2
+    Copyright (C) 2023-2024, Christopher Eric Lentocha
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>20G1427</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>CEsvga2</string>
+	<key>CFBundleIdentifier</key>
+	<string>ChrisEric1.CECL.CEsvga2</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>CEsvga2</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>13C100</string>
+	<key>DTPlatformName</key>
+	<string>macosx</string>
+	<key>DTPlatformVersion</key>
+	<string>12.1</string>
+	<key>DTSDKBuild</key>
+	<string>21C46</string>
+	<key>DTSDKName</key>
+	<string>macosx12.1</string>
+	<key>DTXcode</key>
+	<string>1321</string>
+	<key>DTXcodeBuild</key>
+	<string>13C100</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>CEsvga2</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>ChrisEric1.CECL.CEsvga2</string>
+			<key>IOClass</key>
+			<string>CEsvga2</string>
+			<key>IOHardwareModel</key>
+			<string>CECL SVGA II</string>
+			<key>IOMatchCategory</key>
+			<string>IOFramebuffer</string>
+			<key>IOPCIPrimaryMatch</key>
+			<string>0x04051960</string>
+			<key>IOProbeScore</key>
+			<integer>30100</integer>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOSourceVersion</key>
+			<string>1.0.0.0</string>
+			<key>IOUserClientClass</key>
+			<string>CEsvga2Client</string>
+		</dict>
+	</dict>
+	<key>LSMinimumSystemVersion</key>
+	<string>10.6</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright (C) 2023-2024, Christopher Eric Lentocha</string>
+	<key>OSBundleCompatibleVersion</key>
+	<string>0</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOGraphicsFamily</key>
+		<string>1.4</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.6</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>8.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>8.0.0</string>
+	</dict>
+</dict>
+</plist>
