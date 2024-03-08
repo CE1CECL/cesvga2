@@ -23,5 +23,5 @@
 
 DisplayModeEntry const modeList[NUM_DISPLAY_MODES] =
 {
-	1360, 768, kDisplayModeValidFlag|kDisplayModeDefaultFlag
+	1366, 768, kDisplayModeValidFlag|kDisplayModeDefaultFlag
 };
