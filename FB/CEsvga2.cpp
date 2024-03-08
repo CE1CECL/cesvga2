@@ -642,7 +642,7 @@ IOReturn CLASS::getPixelInformation(IODisplayModeID displayMode, IOIndex depth, 
 	pixelInfo->bitsPerPixel = 32U;
 	pixelInfo->componentCount = 3U;
 	pixelInfo->bitsPerComponent = 8U;
-	pixelInfo->bytesPerRow = ((32U * pixelInfo->activeWidth) / 8U;
+	pixelInfo->bytesPerRow = ((32U * pixelInfo->activeWidth) / 8U);
 	LogPrintf(2, "%s: bitsPerPixel=%u, bytesPerRow=%u\n", __FUNCTION__, 32U, FMT_U(pixelInfo->bytesPerRow));
 	return kIOReturnSuccess;
 }
