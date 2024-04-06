@@ -54,7 +54,7 @@
 			<key>IOMatchCategory</key>
 			<string>IOAccelerator</string>
 			<key>IOPCIPrimaryMatch</key>
-			<string>0x04051960</string>
+			<string>0x04052007</string>
 			<key>IOProbeScore</key>
 			<integer>100</integer>
 			<key>IOProviderClass</key>
