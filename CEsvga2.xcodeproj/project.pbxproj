@@ -768,7 +768,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"LOGGING_LEVEL=9",
+					"LOGGING_LEVEL=0",
 					VLOG_LOCAL,
 					VECTORIZE,
 				);
@@ -784,7 +784,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"LOGGING_LEVEL=9",
+					"LOGGING_LEVEL=0",
 					FRAGILE,
 					VECTORIZE,
 				);
@@ -799,7 +799,7 @@
 		86AA2E312B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=9";
+				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "Info-GA.plist";
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GA;
@@ -812,7 +812,7 @@
 		86AA2E322B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=9";
+				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Info-GLD.plist";
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GLDriver;
@@ -868,7 +868,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"LOGGING_LEVEL=9",
+					"LOGGING_LEVEL=0",
 					VLOG_LOCAL,
 					VECTORIZE,
 				);
@@ -884,7 +884,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"LOGGING_LEVEL=9",
+					"LOGGING_LEVEL=0",
 					FRAGILE,
 					VECTORIZE,
 				);
@@ -899,7 +899,7 @@
 		E512D9AF1077F654002194CB /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=9";
+				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "Info-GA.plist";
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GA;
@@ -919,7 +919,7 @@
 		E5CC19B210CC0DA100EC0343 /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=9";
+				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "Info-GLD.plist";
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GLDriver;
