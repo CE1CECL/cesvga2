@@ -840,12 +840,26 @@ IOReturn CLASS::CustomMode(CustomModeData const* inData, CustomModeData* outData
 	if (inData->flags & 1U) {
 		LogPrintf(3, "%s: Requested custom resolution %ux%u.\n", __FUNCTION__, inData->width, inData->height);
 		w = inData->width;
+		if (w < 1U) {
+			w = 800U;
+		}
+		else if (w > svga.getMaxWidth()) {
+			w = svga.getMaxWidth();
+		}
 		h = inData->height;
+		if (h < 1U) {
+			h = 600U;
+		}
+		else if (h > svga.getMaxHeight()) {
+			h = svga.getMaxHeight();
+		}
+		if (w == dme1->width && h == dme1->height) {
+			LogPrintf(3, "%s: Set resolution to %ux%u already set\n", __FUNCTION__, w, h);
+			goto finish_up;
+		}
 		customMode.width = w;
 		customMode.height = h;
-#if 1	/* CECLGfx 5.x */
 		LogPrintf(3, "s: Setting custom resolution to %ux%u.\n", __FUNCTION__, w, h);
-#endif
 		CustomSwitchStepSet(1U);
 		EmitConnectChangedEvent();
 		if (version_major >= 13) {
