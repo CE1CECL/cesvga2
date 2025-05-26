@@ -1,0 +1,274 @@
+/*
+
+    CEsvga2 - ChrisEric1 Super Video Graphics Array 2
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as published
+    by the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*/
+
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E54B0E4A125751F500CB19B3 /* resolutionSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E54B0E48125751F500CB19B3 /* resolutionSet.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E54B0E48125751F500CB19B3 /* resolutionSet.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = resolutionSet.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* resolutionSet */ = {
+			isa = PBXGroup;
+			children = (
+				08FB7795FE84155DC02AAC07 /* Source */,
+			);
+			name = resolutionSet;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E54B0E48125751F500CB19B3 /* resolutionSet.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* resolutionSet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "resolutionSet" */;
+			buildPhases = (
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = resolutionSet;
+			productName = resolutionSet;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+			};
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "resolutionSet" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* resolutionSet */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* resolutionSet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54B0E4A125751F500CB19B3 /* resolutionSet.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914C08733D8E0010E9CD /* i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisEric1.CECL.resolutionSet;
+				PRODUCT_NAME = resolutionSet;
+				REZ_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = i386;
+		};
+		1DEB915008733D8E0010E9CD /* i386 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				COPYRIGHT_NOTICE = "Copyright (C) 2023-2025, Christopher Eric Lentocha";
+				CURRENT_PROJECT_VERSION = 0;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				OTHER_CFLAGS = (
+					"-framework",
+					"IOKit",
+					"-target",
+					"i386-apple-macos10.4",
+					"-fallow-unsupported",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					"IOKit",
+					"-target",
+					"i386-apple-macos10.4",
+				);
+				REZ_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				SDKROOT = macosx;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = i386;
+		};
+		865B84942D43C8750077D7C8 /* x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				COPYRIGHT_NOTICE = "Copyright (C) 2023-2025, Christopher Eric Lentocha";
+				CURRENT_PROJECT_VERSION = 0;
+				DYLIB_COMPATIBILITY_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				OTHER_CFLAGS = (
+					"-framework",
+					"IOKit",
+					"-target",
+					"x86_64-apple-macos10.4",
+					"-fallow-unsupported",
+				);
+				OTHER_LDFLAGS = (
+					"-framework",
+					"IOKit",
+					"-target",
+					"x86_64-apple-macos10.4",
+				);
+				REZ_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				SDKROOT = macosx;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = x86_64;
+		};
+		865B84952D43C8750077D7C8 /* x86_64 */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_BUNDLE_IDENTIFIER = ChrisEric1.CECL.resolutionSet;
+				PRODUCT_NAME = resolutionSet;
+				REZ_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/../SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = x86_64;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "resolutionSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914C08733D8E0010E9CD /* i386 */,
+				865B84952D43C8750077D7C8 /* x86_64 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = x86_64;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "resolutionSet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB915008733D8E0010E9CD /* i386 */,
+				865B84942D43C8750077D7C8 /* x86_64 */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = x86_64;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

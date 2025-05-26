@@ -1,7 +1,7 @@
 <!--
 
     CEsvga2 - ChrisEric1 Super Video Graphics Array 2
-    Copyright (C) 2023-2024, Christopher Eric Lentocha
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -87,7 +87,7 @@
 	<key>LSMinimumSystemVersion</key>
 	<string>10.4</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright (C) 2023-2024, Christopher Eric Lentocha</string>
+	<string>Copyright (C) 2023-2025, Christopher Eric Lentocha</string>
 	<key>OSBundleCompatibleVersion</key>
 	<string>0</string>
 	<key>OSBundleLibraries</key>

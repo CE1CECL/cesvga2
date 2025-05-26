@@ -1,7 +1,7 @@
 /*
 
     CEsvga2 - ChrisEric1 Super Video Graphics Array 2
-    Copyright (C) 2023-2024, Christopher Eric Lentocha
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -571,7 +571,7 @@ IOReturn CLASS::registerForInterruptType(IOSelect interruptType, IOFBInterruptPr
 	 *   kIOFBVBLInterruptType
 	 *   kIOFBDisplayPortInterruptType
 	 */
-	if (interruptType == kIOFBMCCSInterruptType)
+	if (interruptType == 'mccs')
 		return super::registerForInterruptType(interruptType, proc, target, ref, interruptRef);
 	if (interruptType != kIOFBConnectInterruptType)
 		return kIOReturnUnsupported;

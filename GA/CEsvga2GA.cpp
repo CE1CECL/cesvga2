@@ -1,7 +1,7 @@
 /*
 
     CEsvga2 - ChrisEric1 Super Video Graphics Array 2
-    Copyright (C) 2023-2024, Christopher Eric Lentocha
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -30,17 +30,10 @@ extern "C" {
 }
 #endif
 
-#ifdef __cplusplus
-#include <cstdlib>
-#include <cstdarg>
-#include <cstdio>
-#include <cstring>
-#else
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-#endif
 #include "CEsvga2GA.h"
 #include "BlitHelper.h"
 #include "UCMethods.h"

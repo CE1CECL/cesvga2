@@ -1,7 +1,7 @@
 /*
 
     CEsvga2 - ChrisEric1 Super Video Graphics Array 2
-    Copyright (C) 2023-2024, Christopher Eric Lentocha
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -48,48 +48,37 @@
 		7909DAFF10827DF000CFBDBF /* CEsvga2Device.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7909DAFC10827DF000CFBDBF /* CEsvga2Device.cpp */; };
 		7909DB0010827DF000CFBDBF /* CEsvga2DVDContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7909DAFD10827DF000CFBDBF /* CEsvga2DVDContext.cpp */; };
 		7909DB0110827DF000CFBDBF /* CEsvga2OCDContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7909DAFE10827DF000CFBDBF /* CEsvga2OCDContext.cpp */; };
-		790CE2501084E41B004D109E /* VLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.c */; };
+		790CE2501084E41B004D109E /* VLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.cpp */; };
 		7919BDE1102B203500E56229 /* CEsvga2Accel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7919BDE0102B203500E56229 /* CEsvga2Accel.cpp */; };
 		792AA6B70FFF858500B0B5B1 /* CEsvga2Client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 792AA6B50FFF858500B0B5B1 /* CEsvga2Client.cpp */; };
 		79726007102F07820030052A /* CEsvga2GA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79726006102F07820030052A /* CEsvga2GA.cpp */; };
-		7987F8861037020E003B52A2 /* SendString.c in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.c */; };
+		7987F8861037020E003B52A2 /* SendString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.cpp */; };
 		799EFBD010483D9C003195B5 /* CEsvga2Allocator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 799EFBCF10483D9C003195B5 /* CEsvga2Allocator.cpp */; };
 		799F594710319210000D2A71 /* SVGA3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 799F594610319210000D2A71 /* SVGA3D.cpp */; };
-		79B34F1B103324D500D1E214 /* BlitHelper.c in Sources */ = {isa = PBXBuildFile; fileRef = 79B34F1A103324D500D1E214 /* BlitHelper.c */; };
+		79B34F1B103324D500D1E214 /* BlitHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79B34F1A103324D500D1E214 /* BlitHelper.cpp */; };
 		79CD27F20FFD0E97002D58FE /* SVGADevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79CD27F00FFD0E97002D58FE /* SVGADevice.cpp */; };
 		79D6E26B1008D086005D1591 /* modes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79D6E26A1008D086005D1591 /* modes.cpp */; };
-		86AA2E262B63FB2F00254363 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E242B63FB2F00254363 /* libkmodc++.a */; };
-		86AA2E272B63FB2F00254363 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E252B63FB2F00254363 /* libkmod.a */; };
-		86AA2E282B63FB3600254363 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E252B63FB2F00254363 /* libkmod.a */; };
-		86AA2E292B63FB3600254363 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E242B63FB2F00254363 /* libkmodc++.a */; };
-		86AA2E2A2B63FB3E00254363 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E252B63FB2F00254363 /* libkmod.a */; };
-		86AA2E2B2B63FB3E00254363 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E242B63FB2F00254363 /* libkmodc++.a */; };
-		86AA2E2C2B63FB4900254363 /* libkmod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E252B63FB2F00254363 /* libkmod.a */; };
-		86AA2E2D2B63FB4900254363 /* libkmodc++.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86AA2E242B63FB2F00254363 /* libkmodc++.a */; };
 		E50145D412EDDA1D009FEDD9 /* VertexArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E50145D312EDDA1D009FEDD9 /* VertexArray.cpp */; };
 		E503A17B10838E1700D1649D /* CEsvga2GLContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E503A17810838E1700D1649D /* CEsvga2GLContext.cpp */; };
 		E503A17C10838E1700D1649D /* CEsvga2Surface.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E503A17910838E1700D1649D /* CEsvga2Surface.cpp */; };
 		E503A17D10838E1700D1649D /* CEsvga22DContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E503A17A10838E1700D1649D /* CEsvga22DContext.cpp */; };
-		E52B47D210B5B4C0002470B4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52B47CA10B5B4B5002470B4 /* CoreFoundation.framework */; };
-		E52B47D410B5B4CA002470B4 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52B47CC10B5B4B5002470B4 /* IOKit.framework */; };
-		E555EF1F10CD33CD001B6433 /* SendString.c in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.c */; };
-		E565F91910CC15E200C37DC5 /* VLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.c */; };
+		E555EF1F10CD33CD001B6433 /* SendString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.cpp */; };
+		E565F91910CC15E200C37DC5 /* VLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.cpp */; };
 		E577F63810A089750047C956 /* SVGAScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E577F63710A089750047C956 /* SVGAScreen.cpp */; };
-		E58ACDA810CC439E0051F215 /* EntryPointNames.c in Sources */ = {isa = PBXBuildFile; fileRef = E58ACDA710CC439E0051F215 /* EntryPointNames.c */; };
-		E58AE5721268EC5900ABABF8 /* SendString.c in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.c */; };
-		E58CFD8D12DC66CF00A8F812 /* Shaders.c in Sources */ = {isa = PBXBuildFile; fileRef = E598109712DA004800508FF6 /* Shaders.c */; };
+		E58ACDA810CC439E0051F215 /* EntryPointNames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E58ACDA710CC439E0051F215 /* EntryPointNames.cpp */; };
+		E58AE5721268EC5900ABABF8 /* SendString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.cpp */; };
+		E58CFD8D12DC66CF00A8F812 /* Shaders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E598109712DA004800508FF6 /* Shaders.cpp */; };
 		E58D864612EDEDDE0090C401 /* CEsvga2IPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E58D864512EDEDDE0090C401 /* CEsvga2IPP.cpp */; };
-		E590EA9510CD311F0019BC36 /* SendString.c in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.c */; };
+		E590EA9510CD311F0019BC36 /* SendString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7987F8851037020E003B52A2 /* SendString.cpp */; };
 		E5912BF712B921320028A17D /* CEsvga2Shared.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5912BF612B921320028A17D /* CEsvga2Shared.cpp */; };
-		E594320012A80FF700F55717 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52B47CC10B5B4B5002470B4 /* IOKit.framework */; };
 		E596A49412EDCEDD00F70BF5 /* VendorTransferBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E596A49312EDCEDD00F70BF5 /* VendorTransferBuffer.cpp */; };
-		E59B1DB212ABDD0800F3C4A9 /* GLDData.c in Sources */ = {isa = PBXBuildFile; fileRef = E59B1DB112ABDD0800F3C4A9 /* GLDData.c */; };
-		E59B1DB712ABDD2300F3C4A9 /* GLDCode.c in Sources */ = {isa = PBXBuildFile; fileRef = E59B1DB612ABDD2300F3C4A9 /* GLDCode.c */; };
-		E59CA8C810CD3586004727A0 /* VLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.c */; };
+		E59B1DB212ABDD0800F3C4A9 /* GLDData.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E59B1DB112ABDD0800F3C4A9 /* GLDData.cpp */; };
+		E59B1DB712ABDD2300F3C4A9 /* GLDCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E59B1DB612ABDD2300F3C4A9 /* GLDCode.cpp */; };
+		E59CA8C810CD3586004727A0 /* VLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.cpp */; };
 		E5C69EA012D7502600959371 /* CEsvga2GLContext2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5C69E9F12D7502600959371 /* CEsvga2GLContext2.cpp */; };
-		E5CC19C410CC0EE400EC0343 /* CEsvga2GLDriver.c in Sources */ = {isa = PBXBuildFile; fileRef = E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.c */; };
-		E5DB90D01441EBCF005BB80F /* DevCaps.c in Sources */ = {isa = PBXBuildFile; fileRef = E5DB90CF1441EBCF005BB80F /* DevCaps.c */; };
-		E5F856F410D14232007CE57B /* VLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.c */; };
+		E5CC19C410CC0EE400EC0343 /* CEsvga2GLDriver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.cpp */; };
+		E5DB90D01441EBCF005BB80F /* DevCaps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E5DB90CF1441EBCF005BB80F /* DevCaps.cpp */; };
+		E5F856F410D14232007CE57B /* VLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 790CE24F1084E41B004D109E /* VLog.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,10 +112,53 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8645DC602D4AE5D00048F39F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8645DC672D4AE5D60048F39F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8645DC6E2D4AE5F00048F39F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8645DC752D4AE5F70048F39F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A224C3EFF42367911CA2CB7 /* CEsvga2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2.h; sourceTree = "<group>"; };
 		1A224C3FFF42367911CA2CB7 /* CEsvga2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2.cpp; sourceTree = "<group>"; };
-		32D94FCF0562CBF700B6AF17 /* Info-FB.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-FB.plist"; sourceTree = "<group>"; };
+		32D94FCF0562CBF700B6AF17 /* Info-FB.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-FB.plist"; sourceTree = "<group>"; };
 		32D94FD00562CBF700B6AF17 /* CEsvga2.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEsvga2.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		7909DAF910827DAD00CFBDBF /* CEsvga2Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2Device.h; sourceTree = "<group>"; };
 		7909DAFA10827DAD00CFBDBF /* CEsvga2DVDContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2DVDContext.h; sourceTree = "<group>"; };
@@ -134,12 +166,12 @@
 		7909DAFC10827DF000CFBDBF /* CEsvga2Device.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2Device.cpp; sourceTree = "<group>"; };
 		7909DAFD10827DF000CFBDBF /* CEsvga2DVDContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2DVDContext.cpp; sourceTree = "<group>"; };
 		7909DAFE10827DF000CFBDBF /* CEsvga2OCDContext.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2OCDContext.cpp; sourceTree = "<group>"; };
-		790CE24F1084E41B004D109E /* VLog.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = VLog.c; sourceTree = "<group>"; };
+		790CE24F1084E41B004D109E /* VLog.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VLog.cpp; sourceTree = "<group>"; };
 		790CE2531084E42A004D109E /* VLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLog.h; sourceTree = "<group>"; };
 		7919BDD0102B1EFF00E56229 /* CEsvga2Accel.kext */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEsvga2Accel.kext; sourceTree = BUILT_PRODUCTS_DIR; };
 		7919BDDD102B200500E56229 /* CEsvga2Accel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2Accel.h; sourceTree = "<group>"; };
 		7919BDE0102B203500E56229 /* CEsvga2Accel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2Accel.cpp; sourceTree = "<group>"; };
-		7919BDE6102B207300E56229 /* Info-AC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-AC.plist"; sourceTree = "<group>"; };
+		7919BDE6102B207300E56229 /* Info-AC.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-AC.plist"; sourceTree = "<group>"; };
 		792AA6B40FFF858500B0B5B1 /* CEsvga2Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2Client.h; sourceTree = "<group>"; };
 		792AA6B50FFF858500B0B5B1 /* CEsvga2Client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2Client.cpp; sourceTree = "<group>"; };
 		79452BF410309A46001983D2 /* svga3d_reg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svga3d_reg.h; sourceTree = "<group>"; };
@@ -150,7 +182,7 @@
 		79726006102F07820030052A /* CEsvga2GA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2GA.cpp; sourceTree = "<group>"; };
 		79726008102F07930030052A /* CEsvga2GA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2GA.h; sourceTree = "<group>"; };
 		7986F8FF103B138900CD6D69 /* ce1_options_ac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ce1_options_ac.h; sourceTree = "<group>"; };
-		7987F8851037020E003B52A2 /* SendString.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = SendString.c; sourceTree = "<group>"; };
+		7987F8851037020E003B52A2 /* SendString.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SendString.cpp; sourceTree = "<group>"; };
 		798B54F9103D97E900E7DDF2 /* ce1_options_fb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ce1_options_fb.h; sourceTree = "<group>"; };
 		799EFBCE10483D9C003195B5 /* CEsvga2Allocator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2Allocator.h; sourceTree = "<group>"; };
 		799EFBCF10483D9C003195B5 /* CEsvga2Allocator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2Allocator.cpp; sourceTree = "<group>"; };
@@ -158,17 +190,15 @@
 		799F594610319210000D2A71 /* SVGA3D.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SVGA3D.cpp; sourceTree = "<group>"; };
 		79AEEE01104F0FC8001B6B2C /* FenceTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FenceTracker.h; sourceTree = "<group>"; };
 		79B34F19103324D500D1E214 /* BlitHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlitHelper.h; sourceTree = "<group>"; };
-		79B34F1A103324D500D1E214 /* BlitHelper.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = BlitHelper.c; sourceTree = "<group>"; };
+		79B34F1A103324D500D1E214 /* BlitHelper.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BlitHelper.cpp; sourceTree = "<group>"; };
 		79C4C557102F03CB00EF589E /* CEsvga2GA.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEsvga2GA.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
-		79C4C55D102F043700EF589E /* Info-GA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-GA.plist"; sourceTree = "<group>"; };
+		79C4C55D102F043700EF589E /* Info-GA.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-GA.plist"; sourceTree = "<group>"; };
 		79C556E7102B1D4B006408E2 /* svga_overlay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svga_overlay.h; sourceTree = "<group>"; };
 		79C556E8102B1D4B006408E2 /* svga_reg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svga_reg.h; sourceTree = "<group>"; };
 		79CD27F00FFD0E97002D58FE /* SVGADevice.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SVGADevice.cpp; sourceTree = "<group>"; };
 		79CD27F10FFD0E97002D58FE /* SVGADevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGADevice.h; sourceTree = "<group>"; };
 		79D55C970FFFB1AA004151C8 /* common_fb.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = common_fb.h; sourceTree = "<group>"; };
 		79D6E26A1008D086005D1591 /* modes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = modes.cpp; sourceTree = "<group>"; };
-		86AA2E242B63FB2F00254363 /* libkmodc++.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libkmodc++.a"; path = "usr/lib/libkmodc++.a"; sourceTree = SDKROOT; };
-		86AA2E252B63FB2F00254363 /* libkmod.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkmod.a; path = usr/lib/libkmod.a; sourceTree = SDKROOT; };
 		E50145D212EDDA1D009FEDD9 /* VertexArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VertexArray.h; sourceTree = "<group>"; };
 		E50145D312EDDA1D009FEDD9 /* VertexArray.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VertexArray.cpp; sourceTree = "<group>"; };
 		E503A17510838DBF00D1649D /* CEsvga2GLContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2GLContext.h; sourceTree = "<group>"; };
@@ -180,12 +210,10 @@
 		E5059B8512D7524000866E66 /* UCGLDCommonTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCGLDCommonTypes.h; sourceTree = "<group>"; };
 		E5059B8612D7524000866E66 /* UCMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UCMethods.h; sourceTree = "<group>"; };
 		E5059B8712D752F000866E66 /* GLCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLCommon.h; sourceTree = "<group>"; };
-		E52B47CA10B5B4B5002470B4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		E52B47CC10B5B4B5002470B4 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		E577F63610A089750047C956 /* SVGAScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVGAScreen.h; sourceTree = "<group>"; };
 		E577F63710A089750047C956 /* SVGAScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SVGAScreen.cpp; sourceTree = "<group>"; };
 		E588767B1269C9D3001B5608 /* IOSurfaceRoot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSurfaceRoot.h; sourceTree = "<group>"; };
-		E58ACDA710CC439E0051F215 /* EntryPointNames.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = EntryPointNames.c; sourceTree = "<group>"; };
+		E58ACDA710CC439E0051F215 /* EntryPointNames.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntryPointNames.cpp; sourceTree = "<group>"; };
 		E58ACDA910CC44A60051F215 /* EntryPointNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EntryPointNames.h; sourceTree = "<group>"; };
 		E58CFD8E12DC66EA00A8F812 /* Shaders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shaders.h; sourceTree = "<group>"; };
 		E58D864212EDEAA90090C401 /* CEsvga2IPP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2IPP.h; sourceTree = "<group>"; };
@@ -195,18 +223,18 @@
 		E592EC7912A83E7E001700AC /* GLDTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDTypes.h; sourceTree = "<group>"; };
 		E596A49212EDCEBF00F70BF5 /* VendorTransferBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VendorTransferBuffer.h; sourceTree = "<group>"; };
 		E596A49312EDCEDD00F70BF5 /* VendorTransferBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = VendorTransferBuffer.cpp; sourceTree = "<group>"; };
-		E598109712DA004800508FF6 /* Shaders.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Shaders.c; sourceTree = "<group>"; };
+		E598109712DA004800508FF6 /* Shaders.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shaders.cpp; sourceTree = "<group>"; };
 		E5993C7F10A058070021B17F /* svga3d_caps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = svga3d_caps.h; sourceTree = "<group>"; };
 		E59B1DB012ABDD0800F3C4A9 /* GLDData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDData.h; sourceTree = "<group>"; };
-		E59B1DB112ABDD0800F3C4A9 /* GLDData.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GLDData.c; sourceTree = "<group>"; };
+		E59B1DB112ABDD0800F3C4A9 /* GLDData.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GLDData.cpp; sourceTree = "<group>"; };
 		E59B1DB512ABDD2300F3C4A9 /* GLDCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLDCode.h; sourceTree = "<group>"; };
-		E59B1DB612ABDD2300F3C4A9 /* GLDCode.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GLDCode.c; sourceTree = "<group>"; };
+		E59B1DB612ABDD2300F3C4A9 /* GLDCode.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GLDCode.cpp; sourceTree = "<group>"; };
 		E5C69E9F12D7502600959371 /* CEsvga2GLContext2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2GLContext2.cpp; sourceTree = "<group>"; };
 		E5CC19AE10CC0DA000EC0343 /* CEsvga2GLDriver.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CEsvga2GLDriver.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5CC19AF10CC0DA000EC0343 /* Info-GLD.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-GLD.plist"; sourceTree = "<group>"; };
-		E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = CEsvga2GLDriver.c; sourceTree = "<group>"; };
+		E5CC19AF10CC0DA000EC0343 /* Info-GLD.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-GLD.plist"; sourceTree = "<group>"; };
+		E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CEsvga2GLDriver.cpp; sourceTree = "<group>"; };
 		E5CC19C310CC0EAD00EC0343 /* CEsvga2GLDriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CEsvga2GLDriver.h; sourceTree = "<group>"; };
-		E5DB90CF1441EBCF005BB80F /* DevCaps.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = DevCaps.c; sourceTree = "<group>"; };
+		E5DB90CF1441EBCF005BB80F /* DevCaps.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DevCaps.cpp; sourceTree = "<group>"; };
 		E5DB90D11441EBFD005BB80F /* DevCaps.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DevCaps.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,10 +243,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AA2E2A2B63FB3E00254363 /* libkmod.a in Frameworks */,
-				86AA2E2B2B63FB3E00254363 /* libkmodc++.a in Frameworks */,
-				E52B47D210B5B4C0002470B4 /* CoreFoundation.framework in Frameworks */,
-				E52B47D410B5B4CA002470B4 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,8 +250,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AA2E262B63FB2F00254363 /* libkmodc++.a in Frameworks */,
-				86AA2E272B63FB2F00254363 /* libkmod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,8 +257,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AA2E282B63FB3600254363 /* libkmod.a in Frameworks */,
-				86AA2E292B63FB3600254363 /* libkmodc++.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +264,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86AA2E2C2B63FB4900254363 /* libkmod.a in Frameworks */,
-				86AA2E2D2B63FB4900254363 /* libkmodc++.a in Frameworks */,
-				E594320012A80FF700F55717 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +281,6 @@
 				E593526F12699DB900346DAD /* ceutil */,
 				79C556E1102B1C42006408E2 /* Resources */,
 				19C28FB6FE9D52B211CA2CBB /* Products */,
-				86AA2E232B63FB2E00254363 /* Frameworks */,
 			);
 			name = CEsvga2;
 			sourceTree = "<group>";
@@ -369,7 +385,7 @@
 		79726004102F07620030052A /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				79B34F1A103324D500D1E214 /* BlitHelper.c */,
+				79B34F1A103324D500D1E214 /* BlitHelper.cpp */,
 				79726006102F07820030052A /* CEsvga2GA.cpp */,
 			);
 			name = Source;
@@ -398,8 +414,6 @@
 			children = (
 				79726004102F07620030052A /* Source */,
 				79726005102F07680030052A /* Headers */,
-				E52B47CA10B5B4B5002470B4 /* CoreFoundation.framework */,
-				E52B47CC10B5B4B5002470B4 /* IOKit.framework */,
 			);
 			path = GA;
 			sourceTree = "<group>";
@@ -442,22 +456,13 @@
 			name = Headers;
 			sourceTree = "<group>";
 		};
-		86AA2E232B63FB2E00254363 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				86AA2E252B63FB2F00254363 /* libkmod.a */,
-				86AA2E242B63FB2F00254363 /* libkmodc++.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		E593526212699C6C00346DAD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E58ACDA710CC439E0051F215 /* EntryPointNames.c */,
-				E59B1DB612ABDD2300F3C4A9 /* GLDCode.c */,
-				E59B1DB112ABDD0800F3C4A9 /* GLDData.c */,
-				E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.c */,
+				E58ACDA710CC439E0051F215 /* EntryPointNames.cpp */,
+				E59B1DB612ABDD2300F3C4A9 /* GLDCode.cpp */,
+				E59B1DB112ABDD0800F3C4A9 /* GLDData.cpp */,
+				E5CC19C210CC0EAD00EC0343 /* CEsvga2GLDriver.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -494,8 +499,8 @@
 		E593527112699E0C00346DAD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				7987F8851037020E003B52A2 /* SendString.c */,
-				790CE24F1084E41B004D109E /* VLog.c */,
+				7987F8851037020E003B52A2 /* SendString.cpp */,
+				790CE24F1084E41B004D109E /* VLog.cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -521,8 +526,8 @@
 		E5DB90CD1441EB8A005BB80F /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				E5DB90CF1441EBCF005BB80F /* DevCaps.c */,
-				E598109712DA004800508FF6 /* Shaders.c */,
+				E5DB90CF1441EBCF005BB80F /* DevCaps.cpp */,
+				E598109712DA004800508FF6 /* Shaders.cpp */,
 				E50145D312EDDA1D009FEDD9 /* VertexArray.cpp */,
 				E58D864512EDEDDE0090C401 /* CEsvga2IPP.cpp */,
 				E5912BF612B921320028A17D /* CEsvga2Shared.cpp */,
@@ -553,6 +558,7 @@
 			buildPhases = (
 				32D94FC90562CBF700B6AF17 /* Sources */,
 				86AA2E212B63FAEA00254363 /* Frameworks */,
+				8645DC752D4AE5F70048F39F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -570,6 +576,7 @@
 			buildPhases = (
 				7919BDCC102B1EFF00E56229 /* Sources */,
 				86AA2E222B63FB2700254363 /* Frameworks */,
+				8645DC6E2D4AE5F00048F39F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -586,6 +593,7 @@
 			buildPhases = (
 				79C4C554102F03CB00EF589E /* Sources */,
 				79C4C555102F03CB00EF589E /* Frameworks */,
+				8645DC602D4AE5D00048F39F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -602,6 +610,7 @@
 			buildPhases = (
 				E5CC19AB10CC0DA000EC0343 /* Sources */,
 				E59431FF12A80FEB00F55717 /* Frameworks */,
+				8645DC672D4AE5D60048F39F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -649,8 +658,8 @@
 				79CD27F20FFD0E97002D58FE /* SVGADevice.cpp in Sources */,
 				792AA6B70FFF858500B0B5B1 /* CEsvga2Client.cpp in Sources */,
 				79D6E26B1008D086005D1591 /* modes.cpp in Sources */,
-				E5F856F410D14232007CE57B /* VLog.c in Sources */,
-				E58AE5721268EC5900ABABF8 /* SendString.c in Sources */,
+				E5F856F410D14232007CE57B /* VLog.cpp in Sources */,
+				E58AE5721268EC5900ABABF8 /* SendString.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,7 +669,7 @@
 			files = (
 				7919BDE1102B203500E56229 /* CEsvga2Accel.cpp in Sources */,
 				799F594710319210000D2A71 /* SVGA3D.cpp in Sources */,
-				7987F8861037020E003B52A2 /* SendString.c in Sources */,
+				7987F8861037020E003B52A2 /* SendString.cpp in Sources */,
 				799EFBD010483D9C003195B5 /* CEsvga2Allocator.cpp in Sources */,
 				7909DAFF10827DF000CFBDBF /* CEsvga2Device.cpp in Sources */,
 				7909DB0010827DF000CFBDBF /* CEsvga2DVDContext.cpp in Sources */,
@@ -668,15 +677,15 @@
 				E503A17B10838E1700D1649D /* CEsvga2GLContext.cpp in Sources */,
 				E503A17C10838E1700D1649D /* CEsvga2Surface.cpp in Sources */,
 				E503A17D10838E1700D1649D /* CEsvga22DContext.cpp in Sources */,
-				790CE2501084E41B004D109E /* VLog.c in Sources */,
+				790CE2501084E41B004D109E /* VLog.cpp in Sources */,
 				E577F63810A089750047C956 /* SVGAScreen.cpp in Sources */,
 				E5912BF712B921320028A17D /* CEsvga2Shared.cpp in Sources */,
 				E5C69EA012D7502600959371 /* CEsvga2GLContext2.cpp in Sources */,
-				E58CFD8D12DC66CF00A8F812 /* Shaders.c in Sources */,
+				E58CFD8D12DC66CF00A8F812 /* Shaders.cpp in Sources */,
 				E596A49412EDCEDD00F70BF5 /* VendorTransferBuffer.cpp in Sources */,
 				E50145D412EDDA1D009FEDD9 /* VertexArray.cpp in Sources */,
 				E58D864612EDEDDE0090C401 /* CEsvga2IPP.cpp in Sources */,
-				E5DB90D01441EBCF005BB80F /* DevCaps.c in Sources */,
+				E5DB90D01441EBCF005BB80F /* DevCaps.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,9 +694,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				79726007102F07820030052A /* CEsvga2GA.cpp in Sources */,
-				79B34F1B103324D500D1E214 /* BlitHelper.c in Sources */,
-				E555EF1F10CD33CD001B6433 /* SendString.c in Sources */,
-				E59CA8C810CD3586004727A0 /* VLog.c in Sources */,
+				79B34F1B103324D500D1E214 /* BlitHelper.cpp in Sources */,
+				E555EF1F10CD33CD001B6433 /* SendString.cpp in Sources */,
+				E59CA8C810CD3586004727A0 /* VLog.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,12 +704,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5CC19C410CC0EE400EC0343 /* CEsvga2GLDriver.c in Sources */,
-				E565F91910CC15E200C37DC5 /* VLog.c in Sources */,
-				E58ACDA810CC439E0051F215 /* EntryPointNames.c in Sources */,
-				E590EA9510CD311F0019BC36 /* SendString.c in Sources */,
-				E59B1DB212ABDD0800F3C4A9 /* GLDData.c in Sources */,
-				E59B1DB712ABDD2300F3C4A9 /* GLDCode.c in Sources */,
+				E5CC19C410CC0EE400EC0343 /* CEsvga2GLDriver.cpp in Sources */,
+				E565F91910CC15E200C37DC5 /* VLog.cpp in Sources */,
+				E58ACDA810CC439E0051F215 /* EntryPointNames.cpp in Sources */,
+				E590EA9510CD311F0019BC36 /* SendString.cpp in Sources */,
+				E59B1DB212ABDD0800F3C4A9 /* GLDData.cpp in Sources */,
+				E59B1DB712ABDD2300F3C4A9 /* GLDCode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -733,49 +742,69 @@
 		86AA2E2E2B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPYRIGHT_NOTICE = "Copyright (C) 2023-2024, Christopher Eric Lentocha";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				COPYRIGHT_NOTICE = "Copyright (C) 2023-2025, Christopher Eric Lentocha";
 				CURRENT_PROJECT_VERSION = 0;
 				DYLIB_COMPATIBILITY_VERSION = 0;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/AppleHeaders";
-				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/AppleHeaders";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/kmod/x86_64/**";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				OTHER_CFLAGS = (
-					"-static",
-					"-nostdlib",
-					"-Wno-stdlibcxx-not-found",
+					"-framework",
+					"IOKit",
 					"-target",
-					"x86_64-apple-macos10.6",
+					"x86_64-apple-macos10.4",
 					"-fallow-unsupported",
-					"-fno-stack-protector",
-					"-fno-jump-tables",
 				);
 				OTHER_LDFLAGS = (
-					"-static",
+					"-framework",
+					"IOKit",
 					"-target",
-					"x86_64-apple-macos10.6",
+					"x86_64-apple-macos10.4",
 				);
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				SDKROOT = macosx;
-				VALID_ARCHS = "i386 x86_64";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = x86_64;
 		};
 		86AA2E2F2B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOGGING_LEVEL=0",
 					VLOG_LOCAL,
 					VECTORIZE,
 				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
 				INFOPLIST_FILE = "Info-FB.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2;
 				PRODUCT_NAME = CEsvga2;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = x86_64;
@@ -783,15 +812,28 @@
 		86AA2E302B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOGGING_LEVEL=0",
 					FRAGILE,
 					VECTORIZE,
 				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
 				INFOPLIST_FILE = "Info-AC.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2Accel;
 				PRODUCT_NAME = CEsvga2Accel;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = x86_64;
@@ -799,11 +841,24 @@
 		86AA2E312B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
 				INFOPLIST_FILE = "Info-GA.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GA;
 				PRODUCT_NAME = CEsvga2GA;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -812,11 +867,23 @@
 		86AA2E322B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
 				INFOPLIST_FILE = "Info-GLD.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GLDriver;
 				PRODUCT_NAME = CEsvga2GLDriver;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "__attribute__((visibility(\"hidden\")))";
 				WRAPPER_EXTENSION = bundle;
@@ -826,56 +893,87 @@
 		86AA2E332B63FC6100254363 /* x86_64 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.6.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
 				PRODUCT_NAME = All;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.6.sdk/**";
+				USE_HEADERMAP = YES;
 			};
 			name = x86_64;
 		};
 		E512D9AC1077F654002194CB /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
-				COPYRIGHT_NOTICE = "Copyright (C) 2023-2024, Christopher Eric Lentocha";
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = x86_64;
+				COPYRIGHT_NOTICE = "Copyright (C) 2023-2025, Christopher Eric Lentocha";
 				CURRENT_PROJECT_VERSION = 0;
 				DYLIB_COMPATIBILITY_VERSION = 0;
 				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/AppleHeaders";
-				KERNEL_FRAMEWORK_HEADERS = "$(PROJECT_DIR)/AppleHeaders";
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/kmod/i386/**";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				KERNEL_FRAMEWORK_HEADERS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULE_VERSION = "$(CURRENT_PROJECT_VERSION)";
 				OTHER_CFLAGS = (
-					"-static",
-					"-nostdlib",
-					"-Wno-stdlibcxx-not-found",
+					"-framework",
+					"IOKit",
 					"-target",
 					"i386-apple-macos10.4",
 					"-fallow-unsupported",
-					"-fno-stack-protector",
-					"-fno-jump-tables",
 				);
 				OTHER_LDFLAGS = (
-					"-static",
+					"-framework",
+					"IOKit",
 					"-target",
 					"i386-apple-macos10.4",
 				);
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				SDKROOT = macosx;
-				VALID_ARCHS = "i386 x86_64";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
+				VALID_ARCHS = x86_64;
 			};
 			name = i386;
 		};
 		E512D9AD1077F654002194CB /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOGGING_LEVEL=0",
 					VLOG_LOCAL,
 					VECTORIZE,
 				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
 				INFOPLIST_FILE = "Info-FB.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2;
 				PRODUCT_NAME = CEsvga2;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = i386;
@@ -883,15 +981,28 @@
 		E512D9AE1077F654002194CB /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOGGING_LEVEL=0",
 					FRAGILE,
 					VECTORIZE,
 				);
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
 				INFOPLIST_FILE = "Info-AC.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2Accel;
 				PRODUCT_NAME = CEsvga2Accel;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				STRIP_STYLE = "non-global";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
 				WRAPPER_EXTENSION = kext;
 			};
 			name = i386;
@@ -899,11 +1010,24 @@
 		E512D9AF1077F654002194CB /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
 				INFOPLIST_FILE = "Info-GA.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MARKETING_VERSION = 0;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GA;
 				PRODUCT_NAME = CEsvga2GA;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				WRAPPER_EXTENSION = plugin;
 			};
@@ -912,18 +1036,41 @@
 		E59352931269A11F00346DAD /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				PRODUCT_NAME = All;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
 			};
 			name = i386;
 		};
 		E5CC19B210CC0DA100EC0343 /* i386 */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "";
+				FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
 				GCC_PREPROCESSOR_DEFINITIONS = "LOGGING_LEVEL=0";
 				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				INCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "${SRCROOT}/SDKs/MacOSX10.5.sdk/";
 				INFOPLIST_FILE = "Info-GLD.plist";
+				KERNEL_EXTENSION_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				LIBRARY_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MODULE_NAME = ChrisEric1.CECL.CEsvga2GLDriver;
 				PRODUCT_NAME = CEsvga2GLDriver;
+				REZ_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				SYSTEM_HEADER_SEARCH_PATHS = "${SRCROOT}/SDKs/MacOSX10.5.sdk/**";
+				USE_HEADERMAP = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_EXPORT_DECL = "__attribute__((visibility(\"hidden\")))";
 				WRAPPER_EXTENSION = bundle;

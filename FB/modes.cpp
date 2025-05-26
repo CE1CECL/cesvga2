@@ -1,7 +1,7 @@
 /*
 
     CEsvga2 - ChrisEric1 Super Video Graphics Array 2
-    Copyright (C) 2023-2024, Christopher Eric Lentocha
+    Copyright (C) 2023-2025, Christopher Eric Lentocha
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as published
@@ -18,10 +18,9 @@
 
 */
 
-#include <IOKit/graphics/IOGraphicsTypes.h>
 #include "common_fb.h"
 
 DisplayModeEntry const modeList[NUM_DISPLAY_MODES] =
 {
-	1366, 768, kDisplayModeValidFlag|kDisplayModeDefaultFlag
+	1366, 768, 0x05
 };
